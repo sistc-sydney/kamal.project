@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DreamHome Real Estate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>DreamHome Real Estate</h1>
+<nav>
+<a href="#properties">Properties</a>
+<a href="#calculator">Mortgage Calculator</a>
+<a href="#contact">Schedule Viewing</a>
+</nav>
+
+</header>
+
+<section id="properties">
+<h2>Featured Properties</h2>
+<div class="property">
+<img src="house1.jpg" alt="House 1">
+<h3>3 BHK Villa - $250,000</h3>
+<p>Located in a serene neighborhood with modern amenities.</p>
+</div>
+
+</section>
+
+<section id="calculator">
+<h2>Mortgage Calculator</h2>
+<form onsubmit="calculateMortgage(event)">
+<label>Loan Amount: <input type="number" id="amount" required></label>
+<label>Interest Rate (%): <input type="number" id="rate" step="0.01" required></label>
+<label>Term (years): <input type="number" id="years" required></label>
+<button type="submit">Calculate</button>
+</form>
+<p id="monthlyPayment"></p>
+</section>
+
+<section id="contact">
+<h2>Request a Property Viewing</h2>
+<form action="submit_form.php" method="POST">
+<label>Name: <input type="text" name="name" required></label>
+<label>Email: <input type="email" name="email" required></label>
+<label>Phone: <input type="text" name="phone"></label>
+<label>Property Interested In: <input type="text" name="property"></label>
+<button type="submit">Request Viewing</button>
+</form>
+
+</section>
+
+<footer>
+<p>&copy; 2025 DreamHome Real Estate</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
